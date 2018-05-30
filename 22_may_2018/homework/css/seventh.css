@@ -1,0 +1,42 @@
+* {
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    box-sizing: border-box;
+}
+.first{
+   width: 20%;
+   height:60%;
+   border: 1px solid black;
+   float: left;
+}
+.second{ 
+    width: 80%;
+    height: 30%;
+    border: solid black;
+    border-width: 1px 1px 1px 0px;
+    float:left;
+}
+.third {
+    width: 55%;
+    height: 30%;
+    border: solid black;
+    border-width: 0px 1px 1px 0px;
+    float: left;
+}
+.fourth {
+    width: 25%;
+    height: 30%;
+    border: solid black;
+    border-width: 0px 1px 1px 0px;
+    float: left;
+}
+.fifth { 
+    width:100%;
+    height: 40%;
+    border: solid black;
+    border-width: 0px 1px 1px 1px;
+    float: left;
+
+}

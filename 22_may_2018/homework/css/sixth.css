@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+ 
+}
+.first{
+    width: 20%;
+    height:20%;
+    border: 1px solid grey;
+   float: left;
+
+}
+.second {
+    width: 60%;
+    height: 20%;
+    border: solid grey;
+    border-width: 1px 1px 1px 0px;
+    float: left;
+}
+.third {
+    width: 20%;
+    height: 20%;
+    border: solid grey;
+    border-width: 1px 1px 1px 0px;
+    float: left;
+}
+
+.fourth {
+    width: 20%;
+    height: 50%;
+    border:  solid grey;
+    border-width: 0px 1px 1px 1px;
+    float:left
+    }
+.fifth {
+        width:60%;
+        height: 50%;
+        border: solid grey;
+        border-width: 0px 1px 1px 0px;
+        float:left;
+    }
+.fifth .x {
+    width: 100%;
+    height: 15%;
+    border: solid grey;
+    border-width: 0px 0px 1px 0px;
+}
+  
+
+.sixth {
+    width: 20%;
+    border:  solid grey;
+    border-width: 0px 0px 1px 0px;
+    height: 50%;
+    float: left;
+}
+.seventh {
+    width: 100%;
+    border:solid grey;
+    border-width: 0px 1px 1px 1px;
+    float: left;
+    height: 30%;
+}
