@@ -1,0 +1,106 @@
+ body{
+     margin:0;
+     padding:0;
+     text-align:center;
+ }
+ .header{
+     grid-area: header;
+     background: yellow;
+ }
+ .footer{
+    grid-area: footer ;
+    background: grey;
+
+}
+.main{
+    grid-area: main;
+    background: green;
+}
+.left{
+    grid-area: left;
+    background:red;
+}
+.right{
+    grid-area: right;
+    background: red;
+}
+.container{
+    display: grid;
+    grid-template-areas: "header header header"
+                         "left main right"
+                         "footer footer footer";
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 1fr 100px;
+    min-height: 100vh;
+}
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-areas: "header"
+                              "left"
+                              "main"
+                              "right"
+                              "footer";
+     grid-template-columns: 100%;
+      grid-template-rows: 100px 50px 1fr 50px 100px;
+    }
+}
+
+/* body{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.header-left {
+    grid-area: header-left;
+    background: yellow; 
+}
+.header-right {
+    grid-area: header-right;
+    background: red;
+}
+.main {
+    grid-area: main;
+    background: gray;
+}
+.aside-left {
+    grid-area: aside-left;
+    background: seagreen;
+}
+.aside-center {
+    grid-area:  aside-center;
+    background: yellowgreen;
+}
+.aside-right {
+    grid-area: aside-right;
+    background: limegreen;
+}
+.footer-left {
+    grid-area: footer-left;
+    background: gray;
+}
+.footer-center1{
+    grid-area: footer-center1;
+    background: gray;
+
+}
+.footer-center2{
+    grid-area: footer-center2;
+    background: gray;
+
+}
+.footer-right{
+    grid-area: footer-right;
+    background: gray;
+
+}
+.container {
+    display:grid;
+    grid-template-areas: "header-left" "header-right"
+                                  "main"
+                         "aside-left" "aside-center" "aside-right"
+                         "footer-left" "footer-center1" "footer-center2" "footer-right";
+
+    grid-template-rows: 1fr 1fr auto auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    min-height: 100vh; 
+} */
