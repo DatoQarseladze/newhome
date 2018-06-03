@@ -68,8 +68,18 @@ a:hover, a:focus, a:active {
 	order: 2;
 	flex-flow: center;
 	align-content: center;
+	text-align: center;
+	
 	
 
+}
+header .branding img{
+	width: 350px;
+	margin-left: 40px; 
+}
+header .branding p {
+    
+	 margin-left: 5px;
 }
 header {
 	background: #4385c1;
@@ -241,17 +251,27 @@ header {
 	margin-top: 10px;
 	margin-left: 38px;
 	max-width: 95%;
+	position: relative;
 }
+
 .make-move h3 {
 	
 	order: 1;
-	font-size: 35px;
+	font-size: 45px;
 	align-content: center;
+	margin-left: 100px;
+	position:absolute;
+	bottom: -20px;
+	left: 10px;
 	
 }
 .make-move p {
 	order: 2;
 	margin-top: 40px;
+	margin-right: 60px;
+	position: absolute;
+	top: 0px;
+	right: 60px;
 }
 .blocks {
 	display: flex;

@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        function getMostCostEffectiveSolution (score, costs, highscore){
+         var cost = 100;
+         var index;
+         for (var i = 0; i <scores.length; i++){
+             if (score[i] == highscore){
+                 if (cost > costs[i]) {
+                    index = i;
+                    cost = cost[i];
+                 }
+             }
+         }
+        }
+        return index;
+    </script>
     <title>Document</title>
 </head>
 <body>
-   
+    
 </body>
 </html>
