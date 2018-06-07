@@ -12,11 +12,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 1px solid #9ba0d3;
+    width: 100%;
    
-}
-.o-hero .page-home{
-height: 775px;
-position: fixed;
 }
 .nav1-row .logo{
   margin: 0;
