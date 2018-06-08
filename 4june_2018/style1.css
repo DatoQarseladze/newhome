@@ -289,7 +289,7 @@ footer{
      color: #6d6f7b;
  }
  .footbar{
-     height: 100%;
+    
      width: 100%;
      display: inline-block;
      display:flex;
@@ -297,6 +297,7 @@ footer{
      justify-content: space-between;
      align-items: center;
      background:#ebebeb;
+     min-height: 30px;
  }
  .footbar .footbar-left h2{
      
@@ -450,7 +451,7 @@ footer{
 }
 } 
 
-@media screen and  (max-width: 800px) and (min-width: 400px) {
+@media screen and  (max-width: 800px) and (min-width: 20px) {
    
     body{
         overflow-x: hidden;
@@ -509,6 +510,7 @@ footer{
 .footbar{
     display: inline-block;
     text-align: center;
+    min-height: 30px;
 
 }
 .footbar:after{
