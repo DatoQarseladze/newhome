@@ -137,6 +137,9 @@ main{
     grid-column-gap: 10.97560976%;
     justify-content: space-around;
 }
+.two-columns1 figure{
+    margin-left: 20px;
+}
 .first-column {
     order:1;
     flex-basis: 40.24390244%;
@@ -409,7 +412,7 @@ main{
      color: #6d6f7b;
  
  }
- @media screen and (max-width:976px) and (min-width:698px) {
+ @media screen and (max-width:976px) and (min-width:714px) {
     *{
     margin:0;
     padding:0;
@@ -460,7 +463,7 @@ main{
        
     }
  }
- @media screen and (max-width:697px) and (min-width:320px){
+ @media screen and (max-width:713px) and (min-width:320px){
     *{
         margin:0;
         padding:0;
