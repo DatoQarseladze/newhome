@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,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" />
+    <title>About us | Slack</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <div class="o-hero page-home">
+        <div class="nav1-row">
+         <nav class="nav1">
+             <a href="https://www.slack.com">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Slack_Technologies_Logo.svg" alt="slack" id="slack-image">
+           </a> 
+       </nav>
+    
+      <ul class="nav-list">
+          <li><a href="#">Why Slack?</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="#">Your Workspaces</a></li>
+          
+      </ul>
+       <button id="nav_menu_btn" aria-label="Menu" class="c-nav__icon v--menu u-border-radius--none" data-clog-click="" data-clog-ui-element="btn_menu" data-clog-ui-step="page_home" data-clog-ui-component="inc_header_nav">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" aria-label="" class="svg-replaced" shape-rendering="geometricPrecision"><path d="M0 0h24v3H0zm0 7h24v3H0zm0 7h24v3H0z" fill-rule="evenodd"></path></svg>
+        </button>
+       </div>
+     </div>
+      <main>
+     <section class="header-feature">
+     <div class="header">
+         <header>
+         <h1 class="header-h1">Making work simpler, more pleasant, and more productive</h1>
+         <p class="header-p">Slack is the collaboration hub that brings the right people together with all the right information and tools to get work done. Launched in 2014, Slack is the fastest-growing business application in history. Millions of people around the world use Slack to connect their teams, unify their systems, and drive their business forward. From Fortune 100 companies to corner markets, Slack helps people communicate better.</p>
+        </header>
+        <picture class="illustration"><img class="illustration-image" src="https://a.slack-edge.com/dfb9/marketing/img/about/desktop/hero.png" alt=""></picture>
+        <picture class="not-visible"> 
+            <img src="https://a.slack-edge.com/dfb9/marketing/img/about/mobile/hero.png" alt="">
+        </picture>
+    </div>
+</section>   
+<section class="header-feature">
+    <div class="container-middle">
+        <h2>70,000+ paying companies 
+                use Slack (and counting)</h2>
+         <ul class="three-columns">
+             <li class="stat"> 
+                 <p class="stat-numb">8M</p>
+                 <p class="stat-copy">8 million daily active users</p>
+             </li>
+             <li class="stat">
+                 <p class="stat-numb">65</p>
+                 <p class="stat-copy">65 companies from the Fortune 100 have paid Slack workspaces</p>
+             </li>
+             <li class="stat">
+                 <p class="stat-numb">500K</p>
+                 <p class="stat-copy">500,000 organizations use Slack</p>
+
+             </li>
+         </ul>
+
+    </div>
+</section>
+<section class="header-feature">
+    <div class="container-feature">
+        <div class="two-columns">
+            <img class="illustrat" src="https://a.slack-edge.com/17eab/marketing/img/about/work_ecosystem.png" alt="">
+        <div class="first-column">
+            <h2>Building the ecosystem for work</h2>
+            <p>Connect your conversations with the tools and services that you use to get the job done. With over 1,500 apps and a robust API, the Slack platform team works with partners and developers globally to build apps and integrations that streamline your work, automates mundane tasks and brings context into your conversations in Slack.</p>
+            <p> <a href="https://slack.com/apps">The Slack App Directory</a> gives you access to thousands of apps that can extend the capabilities of your Slack team.</p>
+            <p> <a href="https://slack.com/fund">The Slack Fund </a> is an $80 million dollar fund that supports developers and small companies building apps for Slack.</p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="header-feature">
+    <div class="container-feature">
+         <div class="two-columns1">
+          <figure>
+          <img src="https://a.slack-edge.com/dfb9/marketing/img/about/office.png" alt="">
+        </figure>
+          <div class="right-column">
+           <h2>Located around the globe, and growing</h2>
+           <p>Across our offices, teams at Slack come together with a shared purpose. We believe everyone deserves to work in a welcoming, respectful, and empathetic culture, and we work hard to make sure everyone at Slack has the support they need to thrive. Join us and do the best work of your life.</p>
+           <a href="https://slack.com/careers">View Careers</a>
+        </div>
+         </div>
+    </div>
+</section>
+<section class="header-gray">
+    <div class="container">
+        <h2 class="slack-offices">The Slack Offices</h2>
+        <div class="four-grid">
+        <article class="c-park">
+        <header class="card">
+            <h3>San Francisco</h3>
+            <address class="c-card__lede">
+          500 Howard Street	 <br>San Francisco, CA 94105	<br>United States</address>
+        </header>
+        <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+         <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions</a></div>
+        </article>
+        <article class="c-park">
+                <header class="card">
+                        <h3>New York</h3>
+                        <address class="c-card__lede">
+            436 Lafayette Street	 <br> 6th Floor	<br>New York, NY 10003<br> United States</address>
+                </header>
+                <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+                 <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions</a></div>
+       </article>
+        <article class="c-park">
+                 <header class="card">
+                        <h3>Vancouver</h3>
+                        <address class="c-card__lede">
+             1028 Hamilton Street <br> Suite 401<br>Vancouver, BC, Canada	<br> V6B2R9</address>
+                </header>
+                        <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+                         <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions</a></div>
+       </article>
+       <article class="c-park">
+            <header class="card">
+                    <h3>London</h3>
+                    <address class="c-card__lede">
+      Yalding House <br> 6th Floor<br>152-156 Great Portland St<br> London, UK W1W 6AJ    </address>
+            </header>
+            <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+             <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions</a></div>
+    </article>
+    <article class="c-park">
+            <header class="card">
+                    <h3>Toronto</h3>
+                    <address class="c-card__lede">
+                            171 John Street	<br> 5th Floor<br>Toronto, ON, Canada	<br> M5T 1X3    </address>
+            </header>
+            <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+             <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions</a></div>
+    </article>
+    <article class="c-park">
+            <header class="card">
+                    <h3>Dublin</h3>
+                    <address class="c-card__lede">
+                            4th Floor, One Park Place	<br> Hatch Street Upper	<br>Dublin 2, Ireland  </address>
+            </header>
+            <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+             <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions </a></div>
+   </article>
+   <article class="c-park">
+        <header class="card">
+            <h3>Melbourne</h3>
+            <address class="c-card__lede">
+                    The Maltstore, Level 1	<br> 551 Swanston St<br>Carlton, VIC 3053 <br> Australia    </address></header>
+        <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+         <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions</a></div>
+   </article>
+   <article class="c-park">
+        <header class="card">
+                <h3>Tokyo</h3>
+                <address class="c-card__lede">
+                        Otemachi Financial City	<br> Grand Cube, 3F	<br>1-9-2 Otemachi, Chiyoda-ku	 <br> Tokyo, Japan 100-0004    </address>
+        </header>
+        <figure><img src="https://a.slack-edge.com/491af/marketing/img/about/map_sf_500.jpg" alt=""></figure>
+         <div class="get-directions"><a href="https://www.google.com/maps/dir//500+Howard+St,+San+Francisco,+CA+94105,+USA/@37.7883898,-122.397313,17z">Get Directions</a></div>
+   </article >
+        </div>
+    </div>
+</section>
+<section class="footer-main">
+        <div class="footer-try">
+                <div class="row-center">
+                        <div class="col-6 v--left">
+                                        <h1>Try it for free</h1>
+                                        <p>Already using Slack? <a href="#">Sign in</a></p>
+                        </div>
+                        <div class="col-6 v--right">
+                                        <a  href="https://slack.com/get-started">Get Started</a>
+                        </div>
+                </div>
+        </div>
+</section>
+</main>
+<footer>
+            
+        <div class="nav-footer">
+            <div class="gamyofi">
+               <nav class="slack-logo">
+               <a href="https://slack.com/">  <img src="data:image/png;base64,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" alt=""></a>
+                </nav>  
+           
+                <nav class="nav-footer-list">
+                        <div class="nav-footer-li">
+                <ul>
+                    <li id="nav-footer-main">Company</li>
+                    <li><a href="https://slack.com/about">About Us</a></li>
+                    <li><a href="https://slack.com/careers">Careers</a></li>
+                    <li><a href="https://slackhq.com/">Blog</a></li>
+                    <li><a href="https://slack.com/press">Press</a></li>
+                    <li><a href="https://slack.com/brand-guidelines">Brand Guidelines</a></li>
+                </ul>
+          </div>
+            <div class="nav-footer-li">
+                <ul>
+                 <li id="nav-footer-main">Product</li>
+                 <li>Why Slack?</li>
+                 <li>Enterprise</li>
+                 <li>Customer Stories</li>
+                 <li>Pricing</li>
+                 <li>Security</li>
+                </ul>
+            </div>
+            <div class="nav-footer-li">
+                <ul>
+                    <li id="nav-footer-main">Resources</li>
+                    <li>Download</li>
+                    <li>Help Center</li>
+                    <li>Guides</li>
+                    <li>Partners</li>
+                    <li>Events</li>
+                    <li>App Directory</li>
+                    <li>API</li>
+                    <li>Gartner Report</li>
+                    <li>eBooks</li>
+                </ul>
+            </div>
+            <div class="nav-footer-li">
+                <ul>
+                    <li id="nav-footer-main">Extras</li>
+                    <li>Podcast</li>
+                    <li>Slack Shop</li>
+                    <li>Slack at Work</li>
+                    <li>Slack Fund</li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        </div>
+
+        <div class="footbar">
+           
+                <div class="footbar-left">
+                    <h2><a href="https://status.slack.com/">Status</a></h2>
+                    <h2><a href="https://slack.com/legal">Privacy 	&amp; Terms</a></h2>
+                    <h2><a href="https://techhubge.slack.com/help/requests/new">Contact Us</a></h2>
+                </div>
+                <div class="footbar-right">
+                    <nav>
+                    <h2 class="english-img"><img class="usa-img" src="http://icons.iconarchive.com/icons/icons-land/vista-flags/256/United-States-Flag-1-icon.png" alt="">
+                        <a class="english-us" href="#">English (US)</a>
+                    </h2>
+                    
+                    <h2><a href="https://twitter.com"><i class="fab fa-twitter fa-xs"></i></a></h2>
+                    <h2><a href="https://facebook.com"><i class="fab fa-facebook fa-xs"></i></a></h2>
+                    <h2><a href="https://youtube.com"><i class="fab fa-youtube fa-xs"></i></a></h2>
+                </nav>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

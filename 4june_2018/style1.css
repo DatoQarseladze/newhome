@@ -36,7 +36,7 @@ body{
     text-decoration: none;
     text-align: center;
     font-family: Slack-Tiempos,"Times New Roman",Georgia,serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 #nav_menu_btn{
      background: #fff;
@@ -259,11 +259,6 @@ footer{
     
  }
 
- .nav-footer-li {
-   display: flex;
-   justify-content: space-between;
-   
- }
  .nav-footer .nav-footer-list ul li{ 
      padding: 8.8px;
      font-family: Slack-Averta,appleLogo,sans-serif;
@@ -273,6 +268,10 @@ footer{
      font-size: 14px;
      color: #6d6f7b;
      list-style-type: none;
+ }
+ .gamyofi {
+     display: flex;
+     justify-content: space-between;
  }
  
  .nav-footer .nav-footer-list #nav-footer-main{
@@ -578,9 +577,12 @@ width: 100%;
 text-align: left;
 
 }
+.gray-home{
+    width:100%;
+}
 #get-started{
   padding: 19px 30px 20px;
-  max-width: 520px;
+  max-width: 320px;
   margin:0 auto;
 }
 .hero-header #sign-in{
