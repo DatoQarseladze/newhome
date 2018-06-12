@@ -352,6 +352,8 @@ main{
  .gamyofi {
      display: flex;
      justify-content: space-between;
+     max-width: 76rem;
+     margin: 0 auto;
  }
  
  .nav-footer .nav-footer-list #nav-footer-main{
