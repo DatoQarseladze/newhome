@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+//      let x = Number(prompt("enter ur number"));
+//      let n = Number(prompt("enter number again"));
+//      function pow(x, n){
+//     let result = x ;
+//     for ( i=1; i<n; i++){
+//         x = x * result;
+//     }
+//     return x;
+// }
+//     let sum = pow(x,n);
+//     alert(sum);
+
+//  let n = Number(prompt("enter ur number"));
+
+//  function isPrime(n){
+//      for(i = 2; i < n; i++){
+//          if(n % i ==0){
+//              return false;
+//          }
+//      }
+//     return true;
+//  }
+//  let result = isPrime(n);
+//  document.writeln(result);
+
+//  function showPrime(n){
+//      for(z = 2; z <=n; z++){
+//          if(isPrime(z)){
+//              document.writeln(z);
+//          }
+//      }
+//  }
+// let morigi = showPrime(n);
+
+
+
+
+
+
+
+
+
+
+
+
+let n = Number(prompt("enter ur number"));
+
+function isPrime(n){
+    if(n==1){
+        return false;
+    }
+    else if(n == 2) {
+        return true;
+    }
+    else if(n > 2){
+        for(i=2; i< n; i++){
+            if(n % i=== 0){
+                return false;
+            }
+        }
+}
+    return true
+}
+let result = isPrime(n);
+alert(result);
+function showPrime(n){
+    for(j = 1; j <= n; j++){
+        if(isPrime(j)){
+            document.writeln(i);
+        }
+    }
+}
+let write = showPrime(n);
+
+// let x = Number(prompt("enter X number"));
+// let y = Number(prompt("Enter Y number"))
+
+// function pow(x, y){
+//     if(y == 0){
+//         return 1;
+//     }
+//     let res = x;
+//     for(i = 1; i < y; i++){
+//         x = x * res;
+//     }
+//     return x;
+// }
+// let summ = pow(x,y);
+// alert(summ);
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let Car = function(name, color, brand){ // vqmni funkcias,didi asoti imito viwyeb rom Developerebmac gaigon.
+        this.setName = name;     
+        this.setColor = color;
+        this.setBrand = brand;
+        this.save = function(){  //aqedan ki chainet vakavshireb this parametrebs da funkciis parametrebs,romelic shemova momavalshi
+            console.log("This car is" + this.setName + "her color is  " + this.setColor + " and brand is " + this.setBrand );
+        }
+       
+ }
+ 
+ let car = new Car(" 330, ", "gray", "BMW"  );
+ let car1 = new Car(" Jetta", "Patinum Gray Metallic", "VW")
+
+ car.save();
+ car1.save();
+    
+    </script>
+</body>
+</html>

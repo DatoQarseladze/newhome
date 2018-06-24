@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+   function Accumulator(enterValue){
+       this.value = enterValue;
+
+
+       this.read = function (){
+           this.value += Number(prompt("how much to add?"));
+       };
+   }
+
+   let accumulator = new Accumulator(42);
+
+ accumulator.read();
+ accumulator.read();
+ accumulator.read();
+ accumulator.read();
+ accumulator.read();
+ accumulator.read();
+
+  alert(accumulator.value);
+
+
+    </script>
+    
+</body>
+</html>

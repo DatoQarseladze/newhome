@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+//       let x = Number(prompt("enter number"))
+
+//      function isPrime(x){
+//          if(x == 1){
+//              return false;
+
+//          }
+//         else if(x == 2){
+//             return true;
+//         }
+//         for(i = 2; i < x; i++){
+//             if(x % i == 0){
+//                 return false;
+//             }
+            
+               
+          
+//         }
+//        return true;   
+//      }
+//      function showPrime(x){
+//          for(let i = 1; i <= x; i++){
+//              if(isPrime(i)){
+//                  document.writeln(i);
+//              }
+//          }
+//      }
+   
+//    showPrime(prompt("show primes till ur number"));
+//     console.log(isPrime(x));
+    // console.log(showPrime(x));
+
+// let result = 0;
+// let arr = [];
+
+// function sumInput(x){
+//    while(true){
+//        let x = prompt("enter only number please");
+//        if(isNaN(x) || x == null){
+//            alert("u made mistake");
+//            break
+//        }
+//        else {
+//            arr.push(parseInt(x));
+    
+//        }
+ 
+//    }
+//    for(let i = 0; i < arr.length; i++){
+//        result = result + arr[i];
+//    }
+// }
+// console.log(sumInput());
+// console.log(result);
+let x = Number(prompt("enter ur number"));
+function isPrime(x){
+    if(x == 1){
+        return false;
+    }
+    else if (x == 2 ){
+        return true;
+    }
+
+    for(let i = 2; i < x; i++ ){
+        if(x % i == 0){
+            return false;
+        }
+  
+    }
+    return true;
+}
+
+function listPrime(x){
+    for(y = 2; y <= x; y++){
+        if(isPrime(y)){
+            document.writeln(y);
+        }
+    }
+}
+
+console.log(isPrime(x));
+console.log(listPrime(x));
+    </script>
+</body>
+</html>
