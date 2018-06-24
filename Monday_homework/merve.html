@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function Calculator(){
+
+
+    let method = {
+        "+": function(x, y){
+            return x + y;
+        },
+        "-": function(x, y){
+            return x - y;
+        }
+    };
+
+    this.calculate = function(string) {
+        
+        let split = string.split(' '),
+        x = +split[0],
+        moqmedeba = split[1],
+        y = +split[2]
+
+        if(!method[moqmedeba] || isNaN(y) || isNaN(x)) {
+            return NaN;
+        }
+        return method[moqmedeba] (x,y);
+    }
+
+     this.anotherMethod = function(name, func){
+         method[name] = func;
+     };
+   }
+
+   let calc = new Calculator;
+
+   calc.anotherMethod("*", function(x, y){
+       return x * y;
+   });
+   calc.anotherMethod("/", function(x, y){
+       return x / y;
+   });
+   calc.anotherMethod("**", function(x, y){
+       return Math.pow(x, y);
+   });
+
+   let result = calc.calculate('3 ** 3');
+   alert(result);
+    </script>
+</body>
+</html>

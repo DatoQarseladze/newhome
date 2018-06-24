@@ -40,49 +40,7 @@
 
 //   this.david = new User("David", "Karseladze");
 //   david.sayHi();
-
-function Calculator(){
-    let method = {
-        "-": function(a, b){
-            return a - b;
-        },
-        "+": function(a, b){
-            return a + b;
-        }
-    }
-
-this.calculate = function(str){
-    let split = str.split(' ');
-    a = +split[0],
-    operator = split[1],
-    b = +split[2]
-
-    if ( !method[operator] || isNaN(a) || isNaN(b) ){
-        return NaN;
-    }
-    return method[op] (a , b);
-}
-
-this.anotherMethod = function(name, func) {
-    method[name] = func;
-}
-
-};
-
-let calc = new Calculator;
-
-calc.anotherMethod("*", function(a, b ){
-    return a * b;
-});
-calc.anotherMethod("/", function(a, b){
-    return a / b;
-});
-calc.anotherMethod("**", function(a, b){
-    return Math.pow(a, b);
-});
-
-let result = calc.calculate(3 ** 3);
-alert(result);
+ 
     </script>
     
 </body>
