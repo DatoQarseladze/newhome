@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    let Accumulator = function(startingValue){
+        this.currentValue = startingValue;
+
+        this.read = function(startingValue){
+            startingValue = Number(prompt("enter"));
+            this.currentValue = this.currentValue + startingValue;
+        }
+    }
+    let newfunction = new Accumulator(6);
+    newfunction.read();
+    newfunction.read();
+    alert(newfunction.currentValue);
+    </script>
+</body>
+</html>

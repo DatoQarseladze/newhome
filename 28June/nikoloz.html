@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+function generateHTML(arg) {
+  //create parent element "count" times
+  for (let i = 0; i < arg.count; i++) {
+    //create parent element
+    let parentTag = document.createElement(arg.tagName);
+    let selector = document.querySelector(arg.parentSelector);
+    //check if text content applies to parent element and apply
+    if (
+      arg.content[1] === undefined ||
+      arg.content[1] === "both" ||
+      arg.content[1] === "parent"
+    ) {
+      parentTag.textContent = arg.content[0];
+    }
+    //check if attribute(s) applies to parent element and apply
+    if (
+      arg.hasOwnProperty("attribute") &&
+      (arg.attribute[1] === undefined ||
+        arg.attribute[1][0] === "parent" ||
+        arg.attribute[1][0] === "both")
+    ) {
+      for (let k = 0; k < arg.attribute[0].length; k++) {
+        parentTag.setAttribute(
+          `${arg.attribute[0][k][0]}`,
+          `${arg.attribute[0][k][1]}`
+        );
+      }
+    }
+    //append parent element to dom element with selector
+    selector.appendChild(parentTag);
+    //create child element "childCount" times
+    for (let j = 0; j < arg.childCount; j++) {
+      elementChild = document.createElement(arg.childElement);
+      //check if text content applies to child element and apply
+      if (arg.content[1] === "child" || arg.content[1] === "both") {
+        elementChild.textContent = arg.content[0];
+      }
+      //check if attribute applies to child element and apply
+      if (
+        arg.hasOwnProperty("attribute") &&
+        arg.attribute[1] !== undefined &&
+        (arg.attribute[1][0] === "child" || arg.attribute[1][0] === "both")
+      ) {
+        for (let k = 0; k < arg.attribute[0].length; k++) {
+          elementChild.setAttribute(
+            `${arg.attribute[0][k][0]}`,
+            `${arg.attribute[0][k][1]}`
+          );
+        }
+      }
+      //append child element to parent element
+      parentTag.appendChild(elementChild);
+    }
+  }
+}
+
+
+
+generateHTML({
+  count: 3,
+  tagName: "ul",
+  parentSelector: "#container",
+  content: ["someText", "both"],
+  attribute: [
+    [
+      ["style", "background-color: red;"],
+      ["class", "superClass"],
+      ["id", "superID"]
+    ],
+    ["child"]
+  ],
+  childCount: 2,
+  childElement: "li"
+});
+</script>
+</body>
+</html>

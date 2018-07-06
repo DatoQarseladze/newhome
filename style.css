@@ -1,0 +1,42 @@
+
+.box {
+  /* background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 120%; */
+  
+}
+.container{
+    display: flex;
+}
+.wrapper1 {
+    /* /* display: grid;
+    border:1px solid #000;
+    margin: 10px;
+    grid-gap: 10px;
+    /* grid-auto-flow: column; */
+    /* grid-template-columns: 200px;
+    order: 1; */ */
+ */
+
+/* }
+#average{
+    display: grid;
+    border:1px solid #000;
+    margin: 10px;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-template-columns: 100px;
+    order: 2;
+    text-align: center;
+}
+#average .box{
+  background-color: blue;
+}
+#addDay {
+
+}
+ .box {
+    min-width: 100px;  */
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function Calculator() {
+    let method = {
+        '+': function(x,y){
+            return x + y;
+        },
+        '-': function(x,y){
+            return x - y;
+        }
+    }
+    this.calculate = function(str){
+        let split = str.split(' ');
+      x = +split[0];
+      operator = split[1];
+      y = +split[2];
+        
+     if(!method[operator] || isNaN(x) || isNaN(y)){
+         return NaN
+     };
+     return method[operator] (x,y);
+    };
+  
+     this.addMethod = function(name,func){
+         method[name] = func;
+     };
+}
+
+let calc = new Calculator();
+
+calc.addMethod("*", function(x, y){
+    return x * y;
+});
+calc.addMethod("/", function(x,y){
+    return x / y;
+});
+calc.addMethod("**", function(x,y){
+    return Math.pow(x,y);
+})
+let result = calc.calculate('4 ** 2');
+alert(result);
+   </script>
+</body>
+</html>

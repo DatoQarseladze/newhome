@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function generateHTML(arg){
+        for(let i = 0; i<arg.count; i++){
+            let parent = document.querySelector(arg.parentSelector);
+            let tag = document.createElement(arg.tagName);
+            parent.appendChild(tag);
+       
+        if(arg.content[1] === "both" ||
+            arg.content[1] === "child" ||
+            arg.content[1] === undefined){
+           parent.textContent = arg.content[0];     
+            }
+         if(arg.hasOwnProperty(attribute) && 
+         (arg.attribute[1] === undefined ||
+          arg.attribute[1][0] === "parent" ||
+          arg.attribute[1][0] === "both")
+            ) {
+            for( let z = 0; z < arg.attribute[0].length; z++){
+                parent.setAttribute(
+              `${arg.attribute[0][k][0]}`,
+              `${arg.attribute[0][k][1]}`
+                );
+            }
+            }
+            for (let j = 0; j < arg.childCount; j++){
+                let child = document.createElement(arg.childElement);
+             if (arg.content[1] === "child" || arg.content[1] === "both"){
+                 child.textContent = arg.content[0];
+             }
+             if (
+             arg.hasOwnProperty("attribute") &&
+             arg.attribute[1] !== undefined &&
+            (arg.attribute[1][0] === "child" || arg.attribute[1][0] === "both")
+      ) {
+          for(let n = 0; n < arg.attribute[0].length; n++){
+              child.setAttribute(
+                  `${arg.attribute[0][k][0]}`,
+                  `${arg.attribute[0][k][1]}`
+              );
+          }
+      }
+      tag.appendChild(child);
+            }
+        }
+    }
+    
+    
+    generateHTML({
+      count: 3,
+      tagName: "ul",
+      parentSelector: "#container",
+      content: ["someText", "both"],
+      attribute: [
+      [
+      ["style", "background-color: red;"],
+      ["class", "superClass"],
+      ["id", "superID"]
+       ],
+       ["child"]
+       ]  ,
+      childCount: 2,
+      childElement: "li"
+});
+
+    </script>
+</body>
+</html>

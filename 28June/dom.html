@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        <div id="container">
+             
+            
+        </div>
+        <div id="anything">
+            
+        </div>
+        <div id="xz">
+
+        </div>
+    <script>
+
+        // let container = document.getElementById('container');
+        // console.log(container);
+        // let tag = document.getElementsByTagName('p');
+        // // console.log(tag);
+        // for(i = 0; i< tag.length; i++){
+        //      console.log(tag);
+        // }
+
+    //      function generateHTML(count, tagName, parentSelector, content, childCount, childElement){
+    //         for(i = 0; i < count; i++){
+    //         let parent = document.querySelector(parentSelector);
+    //         let tag = document.createElement(tagName);
+    //         parent.appendChild(tag);
+    //         let text = document.createTextNode(content);
+    //         tag.appendChild(text);
+    //         document.body.appendChild(parent);
+    //        if(childCount){
+    //            for(k = 0; k < childCount; k++){
+    //              let bolo = document.createElement(childElement);
+    //              tag.appendChild(bolo);
+    //              bolo.appendChild(text);
+    //            }
+    //        }
+    //         }
+                
+            
+                
+
+    //     };
+    
+    //    generateHTML(5, 'p', "#container" ,"text content", 3, "div");
+       function generateHTML(count, tagName, parentSelector, content, childCount, childElement){
+            for(i = 0; i < count; i++){
+            let parent = document.querySelector(parentSelector);
+            let tag = document.createElement(tagName);
+            parent.appendChild(tag);
+    
+           if(childCount){
+               for(k = 0; k < childCount; k++){
+				 let text = document.createTextNode(content);
+                 let bolo = document.createElement(childElement);
+                 tag.appendChild(bolo);
+                 bolo.appendChild(text);
+               }
+           } else {
+		   let text = document.createTextNode(content);
+		   tag.appendChild(text);
+		   }
+            }
+
+
+        };
+
+         
+ 
+       generateHTML(count, tagName, parentSelector, content, childCount, childElement);
+
+
+       
+ 
+    </script>
+</body>
+</html>

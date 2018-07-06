@@ -17,6 +17,7 @@
         },
         "-": function(x, y){
             return x - y;
+            debugger;
         }
     };
 
@@ -29,6 +30,7 @@
 
         if(!method[moqmedeba] || isNaN(y) || isNaN(x)) {
             return NaN;
+            debugger;
         }
         return method[moqmedeba] (x,y);
     }
@@ -36,6 +38,7 @@
      this.anotherMethod = function(name, func){
          method[name] = func;
      };
+     debugger;
    }
 
    let calc = new Calculator;
