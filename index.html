@@ -12,7 +12,11 @@
             width: 95%;
             color: white;
         }
-        .homeworks {
+        body{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        /* .homeworks {
             width: 500px;
             float: left;
             text-align: center;
@@ -21,7 +25,12 @@
             width: 200px;
             float: left;
             text-align: center;
-        }
+        }*/
+        .js{
+            width: auto;
+            float: left;
+            text-align: center;
+        } 
         li{
             margin-top: 4px;
             padding: 0 5px;
@@ -36,10 +45,10 @@
        }
        ul li {
            text-align: center;
+           list-style-type: none;
+           
        }
-       ol {
-           text-align: center;
-       }
+     
     </style>
 </head>
 
@@ -68,21 +77,27 @@
         <li><a href="10june/grid.html">11 June</a></li>
         <li><a href="Monday homework/index.html">25 June</a></li>
     </ul>
-    </div>    
-    <div class="classes">  
-        <h1 class="h1">Class</h1>
-        <p><a target="_blank" href="14_may_2018.html/chess.html"> 14 May</a></p>
-        <p><a  target="_blank" href="16_may_2018/circles_exercise.html">16 May </a></p>
-        <p><a  target="_blank" href="19_may_2018/praktikuli.html">19 May</a></p>
-        <p><a  target="_blank" href="21_may_2018/exercise4.html">21 May</a> </p>
-        <p><a href="23_may_2018/multi-column.html">23 May</a> </p>
-        <p><a href="28_may_2018/transition.html">28 May</a> </p>
-        <p><a href="28_may_2018/exercise.html">28 May</a></p>
-        <p><a href="30_may_2018/exercise.html">30 May</a></p>
-        <p><a target="_blank" href="2june/grid1.html"> 2 June </a></p>
-        
     </div>
-
+   
+    <div class="homeworks">  
+        <ul >Class 
+        <li><a target="_blank" href="14_may_2018.html/chess.html"> 14 May</a></li>
+        <li><a  target="_blank" href="16_may_2018/circles_exercise.html">16 May </a></li>
+        <li><a  target="_blank" href="19_may_2018/praktikuli.html">19 May</a></li>
+        <li><a  target="_blank" href="21_may_2018/exercise4.html">21 May</a> </li>
+        <li><a href="23_may_2018/multi-column.html">23 May</a> </li>
+        <li><a href="28_may_2018/transition.html">28 May</a> </li>
+        <li><a href="28_may_2018/exercise.html">28 May</a></li>
+        <li><a href="30_may_2018/exercise.html">30 May</a></li>
+        <li><a target="_blank" href="2june/grid1.html"> 2 June </a></li>
+        </ul>
+    </div>
+    <div class="homeworks">
+            <ul  >JS
+        <li><a style="text-decoration: none" href="calendar/index.html">Calendar</a></li>
+      
+    </ul>
+    </div>    
 </body>
 
 

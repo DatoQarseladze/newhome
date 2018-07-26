@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    table, th, td{
+        border: 1px solid black;
+         padding: 10px;
+         border-collapse: collapse;
+    }
+    table{
+      background: seagreen;
+    }
+    td{
+      color: white;
+    }
+    </style>
+</head>
+<body>
+    <div id="calendar"></div>
+
+     <script>
+            function createCalendar(elem, year, month){
+              this.elem = document.getElementById('elem');
+              let firstDay =  new Date(year, month, 1);
+              console.log(firstDay);
+              let dayGet = firstDay.getDay();
+              console.log(dayGet);
+              let countDay = new Date(year, month-1, 0).getDate();
+              console.log(countDay);
+              
+              let table = document.createElement('table');
+              elem.appendChild(table);
+    
+              let arr1 = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+              for(let i = 0; i < arr1.length; i++){
+                  let weekName = document.createElement("th"); 
+                  table.appendChild(weekName);
+                  weekName.textContent = arr1[i];
+              }
+            
+            let a = 1;
+            for(let x = 0; x < 5; x++){
+               let tr = document.createElement("tr");
+               table.appendChild(tr);
+               for(let y = 0; y < 7; y++){
+                  let td = document.createElement("td");
+               if(a == 1 && y!= dayGet || a > countDay ){
+                   tr.appendChild(td);
+               }
+               else if(x == 0 && y == dayGet){
+                   tr.appendChild(td).textContent = a;
+                   a++
+               }
+              else{
+                tr.appendChild(td).textContent = a;
+                   a++
+            }
+               }
+            }
+            }
+            
+            createCalendar(calendar, 2018, 6);
+            
+       </script>
+</body>
+</html>
