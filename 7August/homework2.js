@@ -9,9 +9,7 @@ fetch(usersEndPoint, {
     }
 })
 .then(usersList => {
-    // console.log(usersList)   
     document.body.innerHTML = usersList.map( user => {
-        //   onclick="showDetailsById(${user.id})"
         return `<div data-user-id="${user.id} " >
         <h2 class='main'>${user.name}<small> Id -${user.id}</small></h2>
         <button class="edit">Edit Me </button>
@@ -31,8 +29,12 @@ fetch(usersEndPoint, {
     })
     edit.forEach(element =>{
         element.addEventListener('click', (event) =>{
-            let result = prompt('enter ur change');
             let main = document.querySelector('.main');
+            console.log(main);
+            let result = prompt("Please enter your change", `${main.textContent}`);
+            if(result === null){
+                return;
+            }
             main.textContent =  result;
         })
     })
