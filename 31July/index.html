@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+     
+         body{
+             display:block;
+         }
+    #container{
+        display: grid;
+        grid-template-columns: repeat(5 , auto);
+
+     margin: 0 auto;
+    }
+    #container > div{
+
+padding: 20px;
+border: 1px solid black;
+background-color: #ff0000;
+
+
+}
+button {
+    padding: 10px;
+    border:  1px solid black;
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id='div1'>1</div>
+    <div id='div2'>2</div>
+    <div id='div3'>3</div>
+    <div id='div4'>4</div>
+    <div id='div5'>5</div>
+    <div id='div6'>6</div>
+    <div id='div7'>7</div>
+    <div id='div8'>8</div>
+    <div id='div9'>9</div>
+    <div id='div10'>10</div>
+</div>
+<button id="button">Click me</button>
+    <script>
+        
+        button.addEventListener('click', function() {
+    let genNumber = Math.floor((Math.random() * 10) + 1);
+    
+    if(document.querySelector(`#div${genNumber}`).style.backgroundColor == 'rgb(255, 153, 153)') {
+        document.querySelector(`#div${genNumber}`).style.backgroundColor = '#ff0000';
+        document.querySelector(`#div${genNumber}`).classList.add('redone');
+    } 
+    else if(document.querySelector(`#div${genNumber}`).style.backgroundColor == 'rgb(255, 0, 0)' && document.querySelector(`#div${genNumber}`).classList == 'redone') {
+        document.querySelector(`#div${genNumber}`).style.backgroundColor = '#660000';
+    } 
+    else if(document.querySelector(`#div${genNumber}`).style.backgroundColor == 'rgb(255, 0, 0)' && document.querySelector(`#div${genNumber}`).classList == 'redtwo') {
+        document.querySelector(`#div${genNumber}`).style.backgroundColor = '#ff9999';
+    }
+    else if(document.querySelector(`#div${genNumber}`).style.backgroundColor == 'rgb(102, 0, 0)') {
+
+        document.querySelector(`#div${genNumber}`).style.backgroundColor = '#ff0000';
+        document.querySelector(`#div${genNumber}`).classList.add('redtwo');
+    }
+    else {
+        document.querySelector(`#div${genNumber}`).style.backgroundColor = '#ff9999';
+        document.querySelector(`#div${genNumber}`).classList.remove('redtwo');
+    }
+})
+
+    </script>
+</body>
+</html>
